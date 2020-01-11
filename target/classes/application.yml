@@ -1,0 +1,22 @@
+#服务配置
+server:
+  port: 8090
+  servlet:
+    context-path: /springbootDemo
+
+#spring相关配置
+spring:
+  #数据源配置
+  datasource:
+    test1:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+      username: root
+      password: 123456
+
+#mybatis扫描配置
+#mybatis:
+#  #mybatis配置文件
+#  config-location: classpath:mybatis/config/mybatis-config.xml
+#  #mapper映射文件
+#  mapper-locations: classpath:mybatis/mapper/*.xml
